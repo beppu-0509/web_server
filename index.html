@@ -51,7 +51,7 @@
 <body>
 
   <!-- 音声ファイル -->
-  <audio id="audio" src="marumaru.mp3"></audio>
+  <audio id="audio" src="marumaru_10d.mp3"></audio>
 
   <!-- 中央のタップ案内 -->
   <div class="center-message">
@@ -63,6 +63,7 @@
   <script>
     document.body.addEventListener('click', () => {
       const audio = document.getElementById('audio');
+      audio.volume = 1.0;
       audio.play();
 
       // タップ案内を消す（初回再生時のみ）
