@@ -1,3 +1,31 @@
-<h1>
-    how many
-</h1>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>タップで音声再生</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background: url('sample.jpg') no-repeat center center;
+      background-size: cover;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <audio id="audio" src="marumaru.mp3"></audio>
+
+  <script>
+    document.body.addEventListener('click', () => {
+      const audio = document.getElementById('audio');
+      audio.play();
+    });
+  </script>
+
+</body>
+</html>
